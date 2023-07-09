@@ -1,0 +1,35 @@
+###
+### Orders
+###
+
+###
+# Get all orders
+GET http://localhost:8080/orders
+
+###
+# Get a specific order
+GET http://localhost:8080/orders/1
+
+###
+# Create a new order
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "product": "Product 1",
+  "price": 2
+}
+
+###
+# Update an order
+PUT http://localhost:8080/orders/2
+Content-Type: application/json
+
+{
+  "product": "Updated Product",
+  "price": 3
+}
+
+###
+# Delete an order
+DELETE http://localhost:8080/orders/2

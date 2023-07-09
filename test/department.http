@@ -1,0 +1,33 @@
+###
+### Departments
+###
+
+###
+# Get all departments
+GET http://localhost:8080/departments
+
+###
+# Get a specific department
+GET http://localhost:8080/departments/1
+
+###
+# Create a new department
+POST http://localhost:8080/departments
+Content-Type: application/json
+
+{
+  "name": "Sales"
+}
+
+###
+# Update a department
+PUT http://localhost:8080/departments/2
+Content-Type: application/json
+
+{
+  "name": "Updated Department"
+}
+
+###
+# Delete a department
+DELETE http://localhost:8080/departments/2
